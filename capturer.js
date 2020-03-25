@@ -9,13 +9,15 @@ var trackRequestListener = Processor.getTrackRequestListener();
 
 // Function to log the URLs, which are sent by visiting a website
 // Calling trackRequest from the Processor to determine if its a crossDomain request
+// Function is not longer used after it was replaced by calling trackRequestListener
 function logURL(requestDetails){
     Processor.trackRequest(requestDetails);
 }
 
 // Code used from the 2nd tutorial -> Intercepting HTTP-requests
-// Using onBeforRequest to call logURL before the requests are sent
+// Using onBeforRequest to call the trackRequestListener before the requests are sent
+// The TrackrequestListener calls Processor
 // Matching pattern: "<all_urls>" to match all urls
-browser.webRequest.onBeforeRequest.addListener(logURL,{urls: ["<all_urls>"]});
+browser.webRequest.onBeforeRequest.addListener(trackRequestListener,{urls: ["<all_urls>"]});
 
 

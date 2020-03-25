@@ -1,8 +1,8 @@
 {
-    "description": "DSDS Vorlage 1",
+    "description": "Arachnet Version of lb",
     "manifest_version": 2,
-    "name": "dsds-template",
-    "version": "1.0",
+    "name": "Arachnet",
+    "version": "2.0",
 
     "background": {
       "scripts": ["processor.js","capturer.js", "vizualizer.js"]
@@ -12,9 +12,9 @@
       "activeTab",
       "<all_urls>",
       "webRequest",
-      "unlimitedStorage",
       "tabs"
     ],
+
 
     "browser_action": {
     "default_icon": {
