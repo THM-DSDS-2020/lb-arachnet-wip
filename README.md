@@ -3,7 +3,7 @@
 **WORK IN PROGRESS**
 
 This tool will give yo an overview on whats going on if you open a website in your brwoser.
-Pictures, Scripts and more are loaded in the background some of them are essential to use the site but others are there to track you. Thsi Add-on shows a list of the called URLs and the type of the called resource.
+Pictures, Scripts and more are loaded in the background some of them are essential to use the site but others are there to track you. This Add-on shows a list of the called URLs and the type of the called resource.
 
 
 ## Getting Started
