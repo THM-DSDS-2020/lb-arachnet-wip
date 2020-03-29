@@ -2,8 +2,8 @@
 
 **WORK IN PROGRESS**
 
-This tool will give yo an overview on whats going on if you open a website in your brwoser.
-Pictures, Scripts and more are loaded in the background some of them are essential to use the site but others are there to track you. Thsi Add-on shows a list of the called URLs and the type of the called resource.
+This tool will give you an overview on whats going on if you open a website in your browser.
+Pictures, Scripts and more are loaded in the background some of them are essential to use the website but others are there to track you. This Add-on shows a list of the called URLs and the type of the called resource.
 
 
 ## Getting Started
@@ -14,7 +14,7 @@ To get a copy of the project follow these instructions:
 * Clone the project with Git
     * Make sure Git is installed
     * Navigate to your folder of desire 
-    * Open your Console and type: `git clone project_url`
+    * Open your Console and type: `git clone https://github.com/THM-DSDS-2020/lb-arachnet-wip.git`
 
 
 ### Prerequisites
@@ -50,7 +50,7 @@ You can edit the files with an Editor or an IDE of your choice.
 
 ## Versioning
 
-I use [GitLab](https://about.gitlab.com/) for versioning.
+I use [GitHub](https://github.com/) for versioning.
 
 ## Authors
 
