@@ -1,10 +1,9 @@
 # **Arachnet**
 
-**WORK IN PROGRESS** 
+**WORK IN PROGRESS**
 
-This tool will give you an overview on whats going on if you open a website in your browser.
-Pictures, Scripts and more are loaded in the background some of them are essential to use the site but others are there to track you. This Add-on shows a list of the called URLs and the type of the called resource.
-(The Add-on currently works ONLY on web.de -> to be fixed later)
+This tool will give yo an overview on whats going on if you open a website in your brwoser.
+Pictures, Scripts and more are loaded in the background some of them are essential to use the site but others are there to track you. Thsi Add-on shows a list of the called URLs and the type of the called resource.
 
 
 ## Getting Started
@@ -15,7 +14,7 @@ To get a copy of the project follow these instructions:
 * Clone the project with Git
     * Make sure Git is installed
     * Navigate to your folder of desire 
-    * Open your Console and type: `git clone https://github.com/THM-DSDS-2020/lb-arachnet-wip.git`
+    * Open your Console and type: `git clone project_url`
 
 
 ### Prerequisites
@@ -41,7 +40,7 @@ After you install the addon as a temporary addon, this button will appear:
 
 ![Test](images/screenshot.png)
 
-If the button appears the addon was succesfully installed.
+If the button appears the addon was succesfully istalled.
 
 
 ## Developing
@@ -51,7 +50,7 @@ You can edit the files with an Editor or an IDE of your choice.
 
 ## Versioning
 
-I use [GitHub](https://github.com/) for versioning.
+I use [GitLab](https://about.gitlab.com/) for versioning.
 
 ## Authors
 
@@ -63,4 +62,4 @@ I use [GitHub](https://github.com/) for versioning.
 
 * Thanks to Lisa H. and Kevin W. for useful hints
 * Thanks to our lecturer for the course "Datenschutz und Datensicherheit" [Tobias Reimann](https://www.tobias-reimann.com/)
-* Open Source icons by [pixelperfect](https://www.flaticon.com/de/kostenloses-icon/open-source_888868) 
+* Open Source icons by [pixelperfect](https://www.flaticon.com/de/kostenloses-icon/open-source_888868)

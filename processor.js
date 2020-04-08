@@ -6,6 +6,13 @@
  *
  */
 
+function check_options() {
+    var selection = document.getElementById("check");
+    if (selection.checked == true){
+        console.log("TRUE!!")
+    }
+}
+
 const Processor = {
 
     /**

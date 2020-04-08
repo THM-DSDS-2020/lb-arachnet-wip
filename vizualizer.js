@@ -5,7 +5,6 @@
  */
 
 
-
 const Vizualizer = {
 
 
@@ -21,27 +20,28 @@ const Vizualizer = {
         // Listener is stored in the variable below
         var vizualizeListener = Vizualizer.getVizualizeListener();
         browser.browserAction.onClicked.addListener(vizualizeListener);
+
     },
 
     /**
-     * Returns the domain name of the website loaded in the active tab
+     * Get the domain name of the website loaded in the active tab
+     * Returning a callback
      */
     getCurrentTabDomain(callback) {
-        //TODO: Add code here, to return the Domain of the current tab.
-        //When the MNI-Wesite is open, it should return 'mni.thm.de'
-        //right now for testing it always returns 'web.de'
-        // A variable to store the promise returned from the query method
-        // returning the promise
-        //let query_promise = browser.tabs.query({currentWindow:true, active:true}).then(tabs => {for (const tab of tabs){
-        //    console.log(tab.title);
-        //}});
-        browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {let tab = tabs[0];
+        browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
+            // Variables to store the tab form the Array & the url
+            let tab = tabs[0];
+            // Creting a new url out of the extrcated url info
             var url = new URL(tab.url)
+
+
+            // Debug console logging
             console.log(tab.url);
+            //passing the hostname of the url to the callback
             callback(url.hostname)
-        }, console.error);
-        //callback();
-        //console.log(callback.url);
+        });
+
+        // returning the callback
         return callback;
     },
 
@@ -53,7 +53,9 @@ const Vizualizer = {
         // Console log to check if method vizualize was executed, after button was clicked
         // Get the domain from the current tab and count CSRs
         console.log('Vizualizer button clicked.');
-        //var currentTabDomain = this.getCurrentTabDomain();
+        
+        //Passing currentTabDomain as a callback to the function
+        //Function will be called as a callback of currentTabDomain
         this.getCurrentTabDomain(function(currentTabDomain) {
             var csr = Processor.getCSR(currentTabDomain);
 
